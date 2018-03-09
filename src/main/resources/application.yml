@@ -1,0 +1,38 @@
+debug: false
+
+server:
+  port: ${port:8080}
+
+spring:
+  application:
+    name: springboot2-permission-template
+
+eureka:
+  client:
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://security-config-service.worthytrip.com:8081/eureka/
+  instance:
+    prefer-ip-address: true
+
+feign:
+  httpclient:
+    enabled: true
+
+app:
+  code: permission-template
+  permission:
+    all-white: /user/login|/user/logout
+    permission-white: /user/info
+
+
+#    debug=false
+#    #server info
+#    server.port=${port:8080}
+#    server.session.timeout=1800
+#    server.tomcat.accept-count=1000
+#    server.tomcat.max-connections=1000
+#    server.tomcat.uri-encoding=UTF-8
+#    # HTTP encoding (HttpEncodingProperties)
+#    spring.http.encoding.charset=UTF-8
+#    spring.http.encoding.enabled=true
