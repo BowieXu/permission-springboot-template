@@ -3,10 +3,6 @@ debug: false
 server:
   port: ${port:8080}
 
-spring:
-  application:
-    name: springboot2-permission-template
-
 eureka:
   client:
     registerWithEureka: false
