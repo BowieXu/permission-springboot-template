@@ -1,2 +1,2 @@
-# worthytrip-permission-springboot-template
-优旅网络权限Springboot项目模板
+# permission-springboot-template
+Springboot项目模板(包含权限)
